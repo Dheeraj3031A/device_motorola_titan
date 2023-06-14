@@ -1,11 +1,12 @@
 $(call inherit-product, device/motorola/titan/full_titan.mk)
 
 # Inherit some common Vendor stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/stag/main.mk)
 PRODUCT_RELEASE_NAME := titan
-PRODUCT_NAME := aosp_titan
+PRODUCT_NAME := stag_titan
 TARGET_USE_OLD_SOUND_PICKER := true
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
+PRODUCT_DEVICE = titan
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
@@ -20,4 +21,4 @@ TARGET_MINIMAL_APPS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Moto G2"
-DEVICE_MAINTAINERS="thedeadfish59"
+DEVICE_MAINTAINERS="NotDheeraj06"
